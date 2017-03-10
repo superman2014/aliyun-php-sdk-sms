@@ -1,0 +1,20 @@
+{
+    "authors": [
+        {
+            "email": "liujingyu@ling.ai",
+            "name": "liujingyu"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Superman2014\\Aliyun\\Sms\\": "aliyun-php-sdk-sms/"
+        }
+    },
+    "description": "aliyun sms package",
+    "name": "superman2014/aliyun-php-sdk-sms",
+    "require": {
+        "superman2014/aliyun-php-sdk-core": "dev-master",
+        "ext-openssl": "*",
+        "php": ">=5.6.0"
+    }
+}
