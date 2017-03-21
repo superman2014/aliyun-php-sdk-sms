@@ -17,92 +17,106 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 namespace Superman2014\Aliyun\Sms\Sms\Request\V20160927;
 
 use Superman2014\Aliyun\Core\RpcAcsRequest;
 
 class QuerySmsDetailByPageRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Sms", "2016-09-27", "QuerySmsDetailByPage");
-	}
+    public function __construct()
+    {
+        parent::__construct('Sms', '2016-09-27', 'QuerySmsDetailByPage');
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $queryTime;
+    private $queryTime;
 
-	private  $recNum;
+    private $recNum;
 
-	private  $pageSize;
+    private $pageSize;
 
-	private  $pageNo;
+    private $pageNo;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters['OwnerId'] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters['ResourceOwnerId'] = $resourceOwnerId;
+    }
 
-	public function getQueryTime() {
-		return $this->queryTime;
-	}
+    public function getQueryTime()
+    {
+        return $this->queryTime;
+    }
 
-	public function setQueryTime($queryTime) {
-		$this->queryTime = $queryTime;
-		$this->queryParameters["QueryTime"]=$queryTime;
-	}
+    public function setQueryTime($queryTime)
+    {
+        $this->queryTime = $queryTime;
+        $this->queryParameters['QueryTime'] = $queryTime;
+    }
 
-	public function getRecNum() {
-		return $this->recNum;
-	}
+    public function getRecNum()
+    {
+        return $this->recNum;
+    }
 
-	public function setRecNum($recNum) {
-		$this->recNum = $recNum;
-		$this->queryParameters["RecNum"]=$recNum;
-	}
+    public function setRecNum($recNum)
+    {
+        $this->recNum = $recNum;
+        $this->queryParameters['RecNum'] = $recNum;
+    }
 
-	public function getPageSize() {
-		return $this->pageSize;
-	}
+    public function getPageSize()
+    {
+        return $this->pageSize;
+    }
 
-	public function setPageSize($pageSize) {
-		$this->pageSize = $pageSize;
-		$this->queryParameters["PageSize"]=$pageSize;
-	}
+    public function setPageSize($pageSize)
+    {
+        $this->pageSize = $pageSize;
+        $this->queryParameters['PageSize'] = $pageSize;
+    }
 
-	public function getPageNo() {
-		return $this->pageNo;
-	}
+    public function getPageNo()
+    {
+        return $this->pageNo;
+    }
 
-	public function setPageNo($pageNo) {
-		$this->pageNo = $pageNo;
-		$this->queryParameters["PageNo"]=$pageNo;
-	}
-
+    public function setPageNo($pageNo)
+    {
+        $this->pageNo = $pageNo;
+        $this->queryParameters['PageNo'] = $pageNo;
+    }
 }

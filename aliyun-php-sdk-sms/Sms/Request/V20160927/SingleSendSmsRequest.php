@@ -17,92 +17,106 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 namespace Superman2014\Aliyun\Sms\Sms\Request\V20160927;
 
 use Superman2014\Aliyun\Core\RpcAcsRequest;
 
 class SingleSendSmsRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Sms", "2016-09-27", "SingleSendSms");
-	}
+    public function __construct()
+    {
+        parent::__construct('Sms', '2016-09-27', 'SingleSendSms');
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $signName;
+    private $signName;
 
-	private  $templateCode;
+    private $templateCode;
 
-	private  $recNum;
+    private $recNum;
 
-	private  $paramString;
+    private $paramString;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters['OwnerId'] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters['ResourceOwnerId'] = $resourceOwnerId;
+    }
 
-	public function getSignName() {
-		return $this->signName;
-	}
+    public function getSignName()
+    {
+        return $this->signName;
+    }
 
-	public function setSignName($signName) {
-		$this->signName = $signName;
-		$this->queryParameters["SignName"]=$signName;
-	}
+    public function setSignName($signName)
+    {
+        $this->signName = $signName;
+        $this->queryParameters['SignName'] = $signName;
+    }
 
-	public function getTemplateCode() {
-		return $this->templateCode;
-	}
+    public function getTemplateCode()
+    {
+        return $this->templateCode;
+    }
 
-	public function setTemplateCode($templateCode) {
-		$this->templateCode = $templateCode;
-		$this->queryParameters["TemplateCode"]=$templateCode;
-	}
+    public function setTemplateCode($templateCode)
+    {
+        $this->templateCode = $templateCode;
+        $this->queryParameters['TemplateCode'] = $templateCode;
+    }
 
-	public function getRecNum() {
-		return $this->recNum;
-	}
+    public function getRecNum()
+    {
+        return $this->recNum;
+    }
 
-	public function setRecNum($recNum) {
-		$this->recNum = $recNum;
-		$this->queryParameters["RecNum"]=$recNum;
-	}
+    public function setRecNum($recNum)
+    {
+        $this->recNum = $recNum;
+        $this->queryParameters['RecNum'] = $recNum;
+    }
 
-	public function getParamString() {
-		return $this->paramString;
-	}
+    public function getParamString()
+    {
+        return $this->paramString;
+    }
 
-	public function setParamString($paramString) {
-		$this->paramString = $paramString;
-		$this->queryParameters["ParamString"]=$paramString;
-	}
-
+    public function setParamString($paramString)
+    {
+        $this->paramString = $paramString;
+        $this->queryParameters['ParamString'] = $paramString;
+    }
 }
