@@ -13,8 +13,14 @@
     "description": "aliyun sms package",
     "name": "superman2014/aliyun-php-sdk-sms",
     "require": {
-        "superman2014/aliyun-php-sdk-core": "dev-master",
+        "superman2014/aliyun-php-sdk-core": "1.0.x@dev",
         "ext-openssl": "*",
         "php": ">=5.6.0"
+    },
+    "license": "MIT",
+    "extra": {
+        "branch-alias": {
+           "dev-master": "1.0-dev"
+        }
     }
 }
