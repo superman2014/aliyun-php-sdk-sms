@@ -7,7 +7,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Superman2014\\Aliyun\\Sms\\": "aliyun-php-sdk-sms/"
+            "Superman2014\\Aliyun\\Sms\\": "aliyun-php-sdk-sms/",
+            "AliyunMNS\\":"sms-2017-06-06/AliyunMNS"
         }
     },
     "description": "aliyun sms package",
@@ -15,7 +16,8 @@
     "require": {
         "superman2014/aliyun-php-sdk-core": "1.0.x@dev",
         "ext-openssl": "*",
-        "php": ">=5.6.0"
+        "php": ">=5.6.0",
+        "guzzlehttp/guzzle": "^6.2@dev"
     },
     "minimum-stability": "dev",
     "license": "MIT",
